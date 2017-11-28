@@ -370,9 +370,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-potter.conf:system/vendor/etc/thermal-engine.conf
 
-# USB HAL
+# TextClassifier smart selection model files
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
+    textclassifier.smartselection.bundle1
 
 # Vibrator
 PRODUCT_PACKAGES += \
