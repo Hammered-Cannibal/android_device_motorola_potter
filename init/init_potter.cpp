@@ -59,12 +59,12 @@ void num_sims() {
     std::string dualsim;
 
     dualsim = android::base::GetProperty("ro.boot.dualsim", "");
-    property_set("ro.hw.dualsim", dualsim.c_str());
+    android::init::property_set("ro.hw.dualsim", dualsim.c_str());
 
     if (dualsim == "true") {
-        property_set("persist.radio.multisim.config", "dsds");
+        android::init::property_set("persist.radio.multisim.config", "dsds");
     } else {
-        property_set("persist.radio.multisim.config", "");
+        android::init::property_set("persist.radio.multisim.config", "");
     }
 }
 
@@ -86,23 +86,23 @@ void vendor_load_properties()
     // rmt_storage
     std::string device = android::base::GetProperty("ro.boot.device", "");
     std::string radio = android::base::GetProperty("ro.boot.radio", "");
-    property_set("ro.hw.device", device.c_str());
-    property_set("ro.hw.radio", radio.c_str());
-    property_set("ro.hw.fps", "true");
-    property_set("ro.hw.imager", "12MP");
+    android::init::property_set("ro.hw.device", device.c_str());
+    android::init::property_set("ro.hw.radio", radio.c_str());
+    android::init::property_set("ro.hw.fps", "true");
+    android::init::property_set("ro.hw.imager", "12MP");
 
     num_sims();
 
     if (sku == "XT1687") {
-        property_set("ro.hw.ecompass", "true");
-        property_set("ro.hw.nfc", "false");
+        android::init::property_set("ro.hw.ecompass", "true");
+        android::init::property_set("ro.hw.nfc", "false");
     }
     else {
-        property_set("ro.hw.ecompass", "false");
-        property_set("ro.hw.nfc", "true");
+        android::init::property_set("ro.hw.ecompass", "false");
+        android::init::property_set("ro.hw.nfc", "true");
     }
 
     if (sku == "XT1683") {
-        property_set("ro.hw.dtv", "true");
+        android::init::property_set("ro.hw.dtv", "true");
     }
 }
