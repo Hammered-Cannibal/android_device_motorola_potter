@@ -366,7 +366,8 @@ PRODUCT_PACKAGES += \
     sensors.msm8953 \
     sensors.rp \
     sensors.tof \
-    sensors.tof.vl53l0
+    sensors.tof.vl53l0 \
+    libsensorndkbridge
 
 # Thermal
 PRODUCT_COPY_FILES += \
