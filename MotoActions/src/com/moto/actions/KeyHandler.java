@@ -512,7 +512,7 @@ public class KeyHandler implements DeviceKeyHandler {
         }
         return true;
     }
-    
+
     public boolean canHandleKeyEvent(KeyEvent event) {
         int scanCode = event.getScanCode();
 
@@ -530,9 +530,10 @@ public class KeyHandler implements DeviceKeyHandler {
         if (!isFPScanCode && !isScreenOffGesturesScanCode) {
             return false;
         }
-        
+
         return true;
-    }    
+    }
+
 
     public boolean isCameraLaunchEvent(KeyEvent event) {
         return false;
