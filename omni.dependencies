@@ -1,44 +1,44 @@
 [
   {
-    "remote": "omnirom",
+    "remote": "ArrowOS-Devices",
     "repository": "android_kernel_motorola_msm8953",
     "target_path": "kernel/motorola/msm8953",
-    "revision": "android-8.1"
+    
   },
   {
-    "remote": "omnirom",
-    "repository": "android_hardware_qcom_display-caf-msm8996",
+    "remote": "ArrowOS",
+    "repository": "android_hardware_qcom_display",
     "target_path": "hardware/qcom/display-caf-msm8996",
-    "revision": "android-8.1"
+    "revision": "arrow-9.x-caf-8996"
   },
   {
-    "remote": "omnirom",
-    "repository": "android_hardware_qcom_audio-caf-msm8996",
+    "remote": "ArrowOS",
+    "repository": "android_hardware_qcom_audio",
     "target_path": "hardware/qcom/audio-caf-msm8996",
-    "revision": "android-8.1"
+    "revision": "arrow-9.x-caf-8996"
   },
   {
-    "remote": "omnirom",
-    "repository": "android_hardware_qcom_media-caf-msm8996",
+    "remote": "KudProject",
+    "repository": "android_hardware_qcom_media",
     "target_path": "hardware/qcom/media-caf-msm8996",
-    "revision": "android-8.1"
+    "revision": "pie-caf-8996"
   },
   {
     "remote": "omnirom",
     "repository": "vendor_qcom_opensource_dataservices",
     "target_path": "vendor/qcom/opensource/dataservices",
-    "revision": "android-8.1"
+    "revision": "android-9.0"
   },
   {
     "remote": "omnirom",
     "repository": "android_device_qcom_caf-sepolicy",
     "target_path": "device/qcom/sepolicy",
-    "revision": "android-8.1"
+    "revision": "android-9.0"
   },
   {
     "remote": "omnirom",
     "repository": "android_vendor_qcom_opensource_interfaces",
     "target_path": "vendor/qcom/opensource/interfaces",
-    "revision": "android-8.1"
+    "revision": "android-9.0"
   }
 ]
