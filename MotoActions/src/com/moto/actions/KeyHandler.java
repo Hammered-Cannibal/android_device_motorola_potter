@@ -484,7 +484,7 @@ public class KeyHandler implements DeviceKeyHandler {
         }
 
         if (isFPScanCode){
-          if (fpGesturePending) {
+            if (fpGesturePending) {
                 return false;
             } else {
                 resetFPGestureDelay();
@@ -512,6 +512,7 @@ public class KeyHandler implements DeviceKeyHandler {
         }
         return true;
     }
+
     public boolean canHandleKeyEvent(KeyEvent event) {
         int scanCode = event.getScanCode();
 
@@ -529,8 +530,10 @@ public class KeyHandler implements DeviceKeyHandler {
         if (!isFPScanCode && !isScreenOffGesturesScanCode) {
             return false;
         }
-      return true;
+
+        return true;
     }
+
 
     public boolean isCameraLaunchEvent(KeyEvent event) {
         return false;
