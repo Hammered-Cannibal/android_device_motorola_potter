@@ -18,8 +18,8 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/motorola/potter/full_potter.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/colt/config/common.mk)
+# Inherit some common Colt stuff.
+$(call inherit-product, vendor/colt/common.mk)
 
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
