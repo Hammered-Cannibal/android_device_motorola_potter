@@ -1,0 +1,32 @@
+[
+  { 
+    "remote": "github",
+    "repository":  "Hammered-Cannibal/Optimus_Drunk_Potter",
+    "target_path": "kernel/motorola/msm8953",
+    "branch": "baked-release"
+  },
+  {
+    "remote": "github",
+    "repository": "Hammered-Cannibal/android_vendor_motorola_potter-1",
+    "target_path": "vendor/motorola/potter",
+    "branch": "baked-release"
+  },
+  {
+    "remote": "github",
+    "repository": "Hammered-Cannibal/packages_resources_MotoActions",
+    "target_path": "packages/resources/MotoActions",
+    "branch": "arrow-9.x"
+  }, 
+  {
+    "remote": "github",
+    "repository": "Hammered-Cannibal/system_qcom",
+    "target_path": "system/qcom",
+    "branch": "9.x"
+  },
+  {
+    "remote": "github",
+    "repository": "Hammered-Cannibal/prebuilts_clang_host_linux-x86_7.0-DragonTC",
+    "target_path": "prebuilts/clang/host/linux-x86/7.0-DragonTC",
+    "branch": "arrow-9.x"   
+  }
+]
