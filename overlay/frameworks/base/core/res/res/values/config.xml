@@ -429,4 +429,7 @@
 
     <dimen name="config_dialogCornerRadius">8.0dip</dimen>
 
+    <!-- Whether the device has outdated qti-telephony-common.jar -->
+    <bool name="config_oldQtiTelephony">false</bool>
+
 </resources>
