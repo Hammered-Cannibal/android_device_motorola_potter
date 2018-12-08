@@ -224,9 +224,9 @@
     <!-- Indicate whether the SD card is accessible without removing the battery. -->
     <bool name="config_batterySdCardAccessibility">false</bool>
 
-    <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
-         autodetected from the Configuration. -->
-    <bool name="config_showNavigationBar">true</bool>
+   <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
+         autodetected from the Configuration. 
+    <bool name="config_showNavigationBar">true</bool> -->
 
     <!-- Screen brightness used to dim the screen while dozing in a very low power state.
           May be less than the minimum allowed brightness setting
@@ -302,14 +302,14 @@
     <bool name="config_dynamic_bind_ims">true</bool>
 
     <!-- Paths to the libraries that contain device specific key handlers -->
-    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+    <!--<string-array name="config_deviceKeyHandlerLibs" translatable="false">
         <item>/system/priv-app/MotoActions/MotoActions.apk</item>
-    </string-array>
+    </string-array>-->
 
     <!-- Names of the key handler classes -->
-    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+    <!--<string-array name="config_deviceKeyHandlerClasses" translatable="false">
         <item>com.dirtyunicorns.settings.device.KeyHandler</item>
-    </string-array>
+    </string-array>-->
 
     <!-- Boolean indicating if current platform supports BLE peripheral mode -->
     <bool name="config_bluetooth_le_peripheral_mode_supported">true</bool>
