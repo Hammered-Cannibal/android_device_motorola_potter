@@ -59,7 +59,7 @@ TARGET_CPU_CORTEX_A53 := true
 TARGET_USES_64_BIT_BINDER := true
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := none
+TARGET_OTA_ASSERT_DEVICE := potter,potter_retail
 
 # GPS
 TARGET_NO_RPC := true
@@ -140,6 +140,12 @@ TARGET_QCOM_DISPLAY_VARIANT := caf-msm8996
 TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
 TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
 TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8996
+
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/audio-$(TARGET_QCOM_AUDIO_VARIANT) \
+    hardware/qcom/display-$(TARGET_QCOM_DISPLAY_VARIANT) \
+    hardware/qcom/media-$(TARGET_QCOM_MEDIA_VARIANT)
+
 
 # Camera
 # TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES := true
@@ -247,7 +253,7 @@ VENDOR_SECURITY_PATCH := 2018-09-01
 # SELinux
 #include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-#include vendor/omni/sepolicy/sepolicy.mk
+include vendor/omni/sepolicy/sepolicy.mk
 
 # Sensor
 USE_SENSOR_MULTI_HAL := true
