@@ -139,8 +139,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
 
 # MotoActions
-#PRODUCT_PACKAGES += \
- #   MotoActions
+PRODUCT_PACKAGES += \
+    MotoActions
 
 # Display
 PRODUCT_PACKAGES += \
@@ -160,7 +160,6 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libdisplayconfig \
     libqdMetaData.system \
-    libqMetaData \
     vendor.display.config@1.0 \
     vendor.display.config@1.0_vendor
 
