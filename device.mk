@@ -150,9 +150,13 @@ PRODUCT_PACKAGES += \
     libgenlock \
     libtinyxml \
     libdisplayconfig \
+    libqdMetaData \
     libqdMetaData.system \
     vendor.display.config@1.0 \
     vendor.display.config@1.0_vendor
+
+PRODUCT_PACKAGES += \
+	libqdutils
 
 PRODUCT_PACKAGES += \
     vendor.display.color@1.0-service \
