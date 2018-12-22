@@ -133,6 +133,9 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
    # MotoActions
 
+# Disable qmi EAP-SIM security
+DISABLE_EAP_PROXY := true
+
 # Display
 PRODUCT_PACKAGES += \
     copybit.msm8953 \
@@ -360,8 +363,8 @@ PRODUCT_PACKAGES += \
     qti-telephony-common \
     telephony-ext
 
-PRODUCT_BOOT_JARS += \
-    telephony-ext
+#PRODUCT_BOOT_JARS += \
+ #   telephony-ext
 
 # Sensors
 PRODUCT_COPY_FILES += \
