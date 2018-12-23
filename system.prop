@@ -295,6 +295,13 @@ ro.usb.bpt_adb=0x2ee6
 ro.usb.bpteth=0x2ee7
 ro.usb.bpteth_adb=0x2ee8
 
+# USB debugging at boot
+
+sys.usb.config=adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+
 # UI thread scheduling
 sys.use_fifo_ui=1
 

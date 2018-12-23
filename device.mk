@@ -143,8 +143,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
 
 # MotoActions
-PRODUCT_PACKAGES += \
-    MotoActions
+#PRODUCT_PACKAGES += \
+ #   MotoActions
+
+# Disable qmi EAP-SIM security
+DISABLE_EAP_PROXY := true
+
 
 # Display
 PRODUCT_PACKAGES += \

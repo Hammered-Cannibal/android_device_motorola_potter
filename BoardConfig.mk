@@ -192,6 +192,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 26401026048 # 25782252 * 1024 mmcblk0p54
 TARGET_PER_MGR_ENABLED := true
 
 # Power
+TARGET_PROVIDES_POWERHAL := true
 TARGET_HAS_NO_WLAN_STATS := true
 
 # QC flags
@@ -212,7 +213,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 TARGET_RIL_VARIANT := caf
 
 # SELinux
-include device/qcom/sepolicy/sepolicy.mk
+#include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Sensor
