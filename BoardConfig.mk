@@ -131,6 +131,11 @@ TARGET_QCOM_AUDIO_VARIANT := caf-msm8996
 TARGET_QCOM_MEDIA_VARIANT := caf-msm8996
 TARGET_QCOM_BLUETOOTH_VARIANT := caf-msm8996
 
+PRODUCT_SOONG_NAMESPACES += \
+    hardware/qcom/display-$(TARGET_QCOM_DISPLAY_VARIANT) \
+    hardware/qcom/audio-$(TARGET_QCOM_AUDIO_VARIANT) \
+    hardware/qcom/media-$(TARGET_QCOM_MEDIA_VARIANT)
+
 # Camera
 # TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES := true
 USE_DEVICE_SPECIFIC_CAMERA := true
@@ -223,7 +228,6 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)/releasetools
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
-include vendor/omni/sepolicy/sepolicy.mk
 
 # Sensor
 USE_SENSOR_MULTI_HAL := true
